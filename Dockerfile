@@ -1,5 +1,5 @@
 FROM openjdk:11
-COPY target/*.jar /server
 WORKDIR /server
+COPY target/*.jar /server
 ENTRYPOINT ["java","-jar","*.jar"]
 LABEL authors="qiuqiu"
